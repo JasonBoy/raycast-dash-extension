@@ -4,11 +4,12 @@
   "title": "Dash",
   "description": "Interface with the Dash application, allowing users to quickly search through documentation sets.",
   "icon": "command-icon.png",
-  "author": "JasonJiang",
+  "author": "RSO",
   "contributors": [
     "sxn",
     "JasonJiang"
   ],
+  "categories": ["Documentation", "Productivity"],
   "license": "MIT",
   "commands": [
     {
@@ -37,7 +38,7 @@
       "title": "Create Docset Quicklink",
       "subtitle": "Docset keyword in Dash",
       "description": "Create a quicklink for a specific docset in Dash.",
-      "mode": "no-view",
+      "mode": "view",
       "arguments": [
         {
           "name": "docset",

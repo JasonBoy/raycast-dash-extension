@@ -5,8 +5,14 @@ import { DashResult } from "../components";
 import { Docset } from "../types";
 import { useDocsetSearch } from "../hooks";
 
-export default function SingleDocsetSearch({ docset, searchstring }: { docset: Docset; searchstring?: string }) {
-  const [searchText, setSearchText] = useState(searchstring || "");
+export default function SingleDocsetSearch({
+  docset,
+  initialSearchString,
+}: {
+  docset: Docset;
+  initialSearchString?: string;
+}) {
+  const [searchText, setSearchText] = useState(initialSearchString || "");
   const [results, isLoading] = useDocsetSearch(searchText, docset.docsetKeyword);
 
   return (
